@@ -10,14 +10,12 @@ const cardTFour = document.getElementById("cardTitleFour");
 const cardTFive = document.getElementById("cardTitleFive");
 const cardTSix = document.getElementById("cardTitleSix");
 
-console.log(cardTOne);
 const cardTOneText = cardTOne.innerHTML;
 const cardTTwoText = cardTOne.innerHTML;
 const cardTThreeText = cardTOne.innerHTML;
 const cardTFourText = cardTOne.innerHTML;
 const cardTFiveText = cardTOne.innerHTML;
 const cardTSixText = cardTOne.innerHTML;
-console.log(cardTOneText);
 
 const buttonOne = document.getElementById("btn-one");
 const buttonTwo = document.getElementById("btn-two");
@@ -30,6 +28,8 @@ const colorBtn = document.getElementById("colorButton");
 
 const date = document.getElementById("date");
 const week = document.getElementById("week");
+
+// date time and week day
 
 let timeString = "";
 // current date and time
@@ -106,6 +106,7 @@ buttonOne.addEventListener("click", function (e) {
   newDiv.appendChild(newElement);
   addMessages.appendChild(newElement);
 });
+
 buttonTwo.addEventListener("click", function (e) {
   if (cardTotalValue == 1) {
     alert("You have completed all tasks!");
