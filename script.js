@@ -12,6 +12,11 @@ const cardTSix = document.getElementById("cardTitleSix");
 
 console.log(cardTOne);
 const cardTOneText = cardTOne.innerHTML;
+const cardTTwoText = cardTOne.innerHTML;
+const cardTThreeText = cardTOne.innerHTML;
+const cardTFourText = cardTOne.innerHTML;
+const cardTFiveText = cardTOne.innerHTML;
+const cardTSixText = cardTOne.innerHTML;
 console.log(cardTOneText);
 
 const buttonOne = document.getElementById("btn-one");
@@ -20,7 +25,7 @@ const buttonThree = document.getElementById("btn-three");
 const buttonFour = document.getElementById("btn-four");
 const buttonFive = document.getElementById("btn-five");
 const buttonSix = document.getElementById("btn-six");
-const buttonSeven = document.getElementById("btn-seven");
+const btnClearHistory = document.getElementById("btn-clear");
 
 const date = document.getElementById("date");
 const week = document.getElementById("week");
@@ -79,7 +84,12 @@ console.log(cardTotalValueIncrease);
 console.log(cardTotalValue);
 
 buttonOne.addEventListener("click", function (e) {
-  alert("Board Update Successfully!");
+  if (cardTotalValue == 1) {
+    alert("You have completed all tasks!");
+  } else {
+    alert("Board Update Successfully!");
+  }
+
   cardTotalValue--;
   cardTotalValueIncrease++;
   cardsNumber.innerHTML = cardTotalValue;
@@ -89,58 +99,121 @@ buttonOne.addEventListener("click", function (e) {
   buttonOne.style.pointerEvents = "none";
 
   let newDiv = document.createElement("div");
-  let newElement = document.createElement("p");
+  newDiv.setAttribute("class", "new-div");
+  let newElement = document.createElement("h6");
   newElement.innerText = `You have completed the task ${cardTOneText} at ${timeString}`;
   newDiv.appendChild(newElement);
   addMessages.appendChild(newElement);
 });
 buttonTwo.addEventListener("click", function (e) {
-  alert("Board Update Successfully!");
+  if (cardTotalValue == 1) {
+    alert("You have completed all tasks!");
+  } else {
+    alert("Board Update Successfully!");
+  }
   cardTotalValue--;
   cardTotalValueIncrease++;
   cardsNumber.innerHTML = cardTotalValue;
   cardNumberAdd.innerHTML = cardTotalValueIncrease;
-  buttonOne.style.backgroundColor = "gray";
-  buttonOne.style.cursor = "default";
-  buttonOne.style.pointerEvents = "none";
+  buttonTwo.style.backgroundColor = "gray";
+  buttonTwo.style.cursor = "default";
+  buttonTwo.style.pointerEvents = "none";
+
+  let newDiv = document.createElement("div");
+  newDiv.setAttribute("class", "new-div");
+  let newElement = document.createElement("h6");
+  newElement.innerText = `You have completed the task ${cardTTwoText} at ${timeString}`;
+  newDiv.appendChild(newElement);
+  addMessages.appendChild(newElement);
 });
 buttonThree.addEventListener("click", function (e) {
-  alert("Board Update Successfully!");
+  if (cardTotalValue == 1) {
+    alert("You have completed all tasks!");
+  } else {
+    alert("Board Update Successfully!");
+  }
   cardTotalValue--;
   cardTotalValueIncrease++;
   cardsNumber.innerHTML = cardTotalValue;
   cardNumberAdd.innerHTML = cardTotalValueIncrease;
-  buttonOne.style.backgroundColor = "gray";
-  buttonOne.style.cursor = "default";
-  buttonOne.style.pointerEvents = "none";
+  buttonThree.style.backgroundColor = "gray";
+  buttonThree.style.cursor = "default";
+  buttonThree.style.pointerEvents = "none";
+
+  let newDiv = document.createElement("div");
+  newDiv.setAttribute("class", "new-div");
+  let newElement = document.createElement("h6");
+  newElement.innerText = `You have completed the task ${cardTThreeText} at ${timeString}`;
+  newDiv.appendChild(newElement);
+  addMessages.appendChild(newElement);
 });
 buttonFour.addEventListener("click", function (e) {
-  alert("Board Update Successfully!");
+  if (cardTotalValue == 1) {
+    alert("You have completed all tasks!");
+  } else {
+    alert("Board Update Successfully!");
+  }
   cardTotalValue--;
   cardTotalValueIncrease++;
   cardsNumber.innerHTML = cardTotalValue;
   cardNumberAdd.innerHTML = cardTotalValueIncrease;
-  buttonOne.style.backgroundColor = "gray";
-  buttonOne.style.cursor = "default";
-  buttonOne.style.pointerEvents = "none";
+  buttonFour.style.backgroundColor = "gray";
+  buttonFour.style.cursor = "default";
+  buttonFour.style.pointerEvents = "none";
+
+  let newDiv = document.createElement("div");
+  newDiv.setAttribute("class", "new-div");
+  let newElement = document.createElement("h6");
+  newElement.innerText = `You have completed the task ${cardTFourText} at ${timeString}`;
+  newDiv.appendChild(newElement);
+  addMessages.appendChild(newElement);
 });
 buttonFive.addEventListener("click", function (e) {
-  alert("Board Update Successfully!");
+  if (cardTotalValue == 1) {
+    alert("You have completed all tasks!");
+  } else {
+    alert("Board Update Successfully!");
+  }
   cardTotalValue--;
   cardTotalValueIncrease++;
   cardsNumber.innerHTML = cardTotalValue;
   cardNumberAdd.innerHTML = cardTotalValueIncrease;
-  buttonOne.style.backgroundColor = "gray";
-  buttonOne.style.cursor = "default";
-  buttonOne.style.pointerEvents = "none";
+  buttonFive.style.backgroundColor = "gray";
+  buttonFive.style.cursor = "default";
+  buttonFive.style.pointerEvents = "none";
+
+  let newDiv = document.createElement("div");
+  newDiv.setAttribute("class", "new-div");
+  let newElement = document.createElement("h6");
+  newElement.innerText = `You have completed the task ${cardTFiveText} at ${timeString}`;
+  newDiv.appendChild(newElement);
+  addMessages.appendChild(newElement);
 });
 buttonSix.addEventListener("click", function (e) {
-  alert("Board Update Successfully!");
+  if (cardTotalValue == 1) {
+    alert("You have completed all tasks!");
+  } else {
+    alert("Board Update Successfully!");
+  }
   cardTotalValue--;
   cardTotalValueIncrease++;
   cardsNumber.innerHTML = cardTotalValue;
   cardNumberAdd.innerHTML = cardTotalValueIncrease;
-  buttonOne.style.backgroundColor = "gray";
-  buttonOne.style.cursor = "default";
-  buttonOne.style.pointerEvents = "none";
+  buttonSix.style.backgroundColor = "gray";
+  buttonSix.style.cursor = "default";
+  buttonSix.style.pointerEvents = "none";
+
+  let newDiv = document.createElement("div");
+  let newElement = document.createElement("h6");
+  newElement.setAttribute("class", "new-ele");
+  newElement.innerText = `You have completed the task ${cardTSixText} at ${timeString}`;
+  newDiv.appendChild(newElement);
+  addMessages.appendChild(newElement);
+});
+
+btnClearHistory.addEventListener("click", function (e) {
+  const elements = document.querySelectorAll("h6");
+  elements.forEach(function (element) {
+    element.remove();
+  });
 });
