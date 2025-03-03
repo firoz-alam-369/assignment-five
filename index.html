@@ -18,10 +18,200 @@
       rel="stylesheet"
       type="text/css"
     />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/4a45d7d5ed.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body>
-    <header></header>
-    <main></main>
+  <body class="bg-slate-100">
+    <header class="pt-4">
+      <div class="navbar bg-base-100 shadow-sm max-w-7xl mx-auto rounded-md">
+        <div class="flex-1">
+          <a class="btn btn-ghost text-xl">
+            <img src="./assets/logo.png" alt="" />
+          </a>
+        </div>
+        <div class="flex flex-row gap-3">
+          <div class="flex items-center gap-4">
+            <i
+              class="fa-solid fa-square-check text-2xl"
+              style="color: #244be5"
+            ></i>
+            <h1 id="totalNumberIncrease" class="text-xl font-bold">23</h1>
+          </div>
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+            <img src="./assets/Group 8.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="my-5">
+      <div class="max-w-7xl mx-auto rounded-md space-x-4 flex">
+        <div class="w-3/4 bg-white h-screen">
+          <div class="grid grid-cols-4 gap-4 px-5 py-5">
+            <div
+              class="col-span-1 bg-slate-100 h-32 flex items-center justify-center rounded-md"
+            >
+              <div class="flex items-center gap-4">
+                <i
+                  class="fa-solid fa-square-check text-xl bg-white text-blue-600"
+                ></i>
+                <div class="flex flex-col text-center">
+                  <p>Task assigned</p>
+                  <h2 id="totalCardNumber" class="text-xl font-bold">01</h2>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-span-2 bg-linear-to-r from-blue-700 to-blue-300 h-32 flex items-center justify-center rounded-md"
+            >
+              <div class="flex items-center gap-4">
+                <i
+                  class="fa-solid fa-calendar-days text-4xl"
+                  style="color: #ffffff"
+                ></i>
+                <p class="text-white text-xl font-bold">
+                  Discover something <br />
+                  new Today
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-span-1 bg-slate-100 h-32 flex items-center justify-center rounded-md"
+            >
+              <div class="flex items-center gap-4">
+                <i class="fa-solid fa-calendar-days"></i>
+                <div>
+                  <p class="font-bold">Wed</p>
+                  <p class="font-bold">Jul 28 2025</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div
+              class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 px-5 py-5"
+            >
+              <!-- Card 1 -->
+              <div class="bg-slate-100 p-4 rounded-lg shadow-md">
+                <span class="text-sm bg-white">ShopEase।</span>
+                <h3 class="text-lg font-semibold mt-2">
+                  Fix Mobile Button Issue
+                </h3>
+                <div class="mt-2 p-2 bg-white rounded">
+                  <p>Debug using Chrome DevTools, check for overlapp।</p>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                  <div class="flex flex-col">
+                    <span>Deadline</span>
+                    <span class="text-sm text-gray-500">21 March 2025</span>
+                  </div>
+
+                  <button class="btn btn-primary">Completed</button>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="bg-slate-100 p-4 rounded-lg shadow-md">
+                <span class="text-sm bg-white">CloudSync</span>
+                <h3 class="text-lg font-semibold mt-2">Add Dark Mode</h3>
+                <div class="mt-2 p-2 bg-white rounded">
+                  <p>Debug using Chrome DevTools, check for overlapp।</p>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                  <div class="flex flex-col">
+                    <span>Deadline</span>
+                    <span class="text-sm text-gray-500">21 March 2025</span>
+                  </div>
+
+                  <button class="btn btn-primary">Completed</button>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="bg-slate-100 p-4 rounded-lg shadow-md">
+                <span class="text-sm bg-white">SwiftPay</span>
+                <h3 class="text-lg font-semibold mt-2">Optimize Home page </h3>
+                <div class="mt-2 p-2 bg-white rounded">
+                  <p>Debug using Chrome DevTools, check for overlapp।</p>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                  <div class="flex flex-col">
+                    <span>Deadline</span>
+                    <span class="text-sm text-gray-500">21 March 2025</span>
+                  </div>
+
+                  <button class="btn btn-primary">Completed</button>
+                </div>
+              </div>
+              <!-- Card 4 -->
+              <div class="bg-slate-100 p-4 rounded-lg shadow-md">
+                <span class="text-sm bg-white">Meta</span>
+                <h3 class="text-lg font-semibold mt-2">Add new emoji 🤲</h3>
+                <div class="mt-2 p-2 bg-white rounded">
+                  <p>Debug using Chrome DevTools, check for overlapp।</p>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                  <div class="flex flex-col">
+                    <span>Deadline</span>
+                    <span class="text-sm text-gray-500">21 March 2025</span>
+                  </div>
+
+                  <button class="btn btn-primary">Completed</button>
+                </div>
+              </div>
+              <!-- Card 5 -->
+              <div class="bg-slate-100 p-4 rounded-lg shadow-md">
+                <span class="text-sm bg-white">Google LLC</span>
+                <h3 class="text-lg font-semibold mt-2">Integrate OpenAI API</h3>
+                <div class="mt-2 p-2 bg-white rounded">
+                  <p>Debug using Chrome DevTools, check for overlapp।</p>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                  <div class="flex flex-col">
+                    <span>Deadline</span>
+                    <span class="text-sm text-gray-500">21 March 2025</span>
+                  </div>
+
+                  <button class="btn btn-primary">Completed</button>
+                </div>
+              </div>
+              <!-- Card 6 -->
+              <div class="bg-slate-100 p-4 rounded-lg shadow-md">
+                <span class="text-sm bg-white">Glassdor</span>
+                <h3 class="text-lg font-semibold mt-2">
+                  Improve Job searching
+                </h3>
+                <div class="mt-2 p-2 bg-white rounded">
+                  <p>Debug using Chrome DevTools, check for overlapp।</p>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                  <div class="flex flex-col">
+                    <span>Deadline</span>
+                    <span class="text-sm text-gray-500">21 March 2025</span>
+                  </div>
+
+                  <button class="btn btn-primary">Completed</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/4 bg-white h-screen rounded-md">
+          <div class="flex flex-col justify-center items-center space-y-4 py-5">
+            <div class="flex gap-3 items-center justify-center">
+              <i class="fa-solid fa-clock-rotate-left"></i>
+              <p>Activity log</p>
+            </div>
+            <div>
+              <button class="btn btn-primary">Clear History</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer></footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>
