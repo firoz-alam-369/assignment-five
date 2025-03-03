@@ -38,7 +38,7 @@
               class="fa-solid fa-square-check text-2xl"
               style="color: #244be5"
             ></i>
-            <h1 id="totalNumberIncrease" class="text-xl font-bold">23</h1>
+            <h1 id="cardNumberAdd" class="text-xl font-bold">23</h1>
           </div>
           <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
             <img src="./assets/Group 8.png" alt="" />
@@ -59,7 +59,7 @@
                 ></i>
                 <div class="flex flex-col text-center">
                   <p>Task assigned</p>
-                  <h2 id="totalCardNumber" class="text-xl font-bold">01</h2>
+                  <h2 id="cardsNumber" class="text-xl font-bold">06</h2>
                 </div>
               </div>
             </div>
@@ -83,8 +83,8 @@
               <div class="flex items-center gap-4">
                 <i class="fa-solid fa-calendar-days"></i>
                 <div>
-                  <p class="font-bold">Wed</p>
-                  <p class="font-bold">Jul 28 2025</p>
+                  <p id="week" class="font-bold">Wed</p>
+                  <p id="date" class="font-bold">Jul 28 2025</p>
                 </div>
               </div>
             </div>
@@ -92,12 +92,13 @@
 
           <div>
             <div
+              id="cardContainer"
               class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 px-5 py-5"
             >
               <!-- Card 1 -->
-              <div class="bg-slate-100 p-4 rounded-lg shadow-md">
+              <div class="bg-slate-100 p-4 rounded-lg shadow-md card">
                 <span class="text-sm bg-white">ShopEase।</span>
-                <h3 class="text-lg font-semibold mt-2">
+                <h3 id="cardTitleOne" class="text-lg font-semibold mt-2">
                   Fix Mobile Button Issue
                 </h3>
                 <div class="mt-2 p-2 bg-white rounded">
@@ -109,13 +110,17 @@
                     <span class="text-sm text-gray-500">21 March 2025</span>
                   </div>
 
-                  <button class="btn btn-primary">Completed</button>
+                  <button id="btn-one" class="btn btn-primary">
+                    Completed
+                  </button>
                 </div>
               </div>
               <!-- Card 2 -->
-              <div class="bg-slate-100 p-4 rounded-lg shadow-md">
+              <div class="bg-slate-100 p-4 rounded-lg shadow-md card">
                 <span class="text-sm bg-white">CloudSync</span>
-                <h3 class="text-lg font-semibold mt-2">Add Dark Mode</h3>
+                <h3 id="cardTitleTwo" class="text-lg font-semibold mt-2">
+                  Add Dark Mode
+                </h3>
                 <div class="mt-2 p-2 bg-white rounded">
                   <p>Debug using Chrome DevTools, check for overlapp।</p>
                 </div>
@@ -125,13 +130,17 @@
                     <span class="text-sm text-gray-500">21 March 2025</span>
                   </div>
 
-                  <button class="btn btn-primary">Completed</button>
+                  <button id="btn-two" class="btn btn-primary">
+                    Completed
+                  </button>
                 </div>
               </div>
               <!-- Card 3 -->
-              <div class="bg-slate-100 p-4 rounded-lg shadow-md">
+              <div class="bg-slate-100 p-4 rounded-lg shadow-md card">
                 <span class="text-sm bg-white">SwiftPay</span>
-                <h3 class="text-lg font-semibold mt-2">Optimize Home page </h3>
+                <h3 id="cardTitleThree" class="text-lg font-semibold mt-2">
+                  Optimize Home page 
+                </h3>
                 <div class="mt-2 p-2 bg-white rounded">
                   <p>Debug using Chrome DevTools, check for overlapp।</p>
                 </div>
@@ -141,13 +150,17 @@
                     <span class="text-sm text-gray-500">21 March 2025</span>
                   </div>
 
-                  <button class="btn btn-primary">Completed</button>
+                  <button id="btn-three" class="btn btn-primary">
+                    Completed
+                  </button>
                 </div>
               </div>
               <!-- Card 4 -->
-              <div class="bg-slate-100 p-4 rounded-lg shadow-md">
+              <div class="bg-slate-100 p-4 rounded-lg shadow-md card">
                 <span class="text-sm bg-white">Meta</span>
-                <h3 class="text-lg font-semibold mt-2">Add new emoji 🤲</h3>
+                <h3 id="cardTitleFour" class="text-lg font-semibold mt-2">
+                  Add new emoji 🤲
+                </h3>
                 <div class="mt-2 p-2 bg-white rounded">
                   <p>Debug using Chrome DevTools, check for overlapp।</p>
                 </div>
@@ -157,13 +170,17 @@
                     <span class="text-sm text-gray-500">21 March 2025</span>
                   </div>
 
-                  <button class="btn btn-primary">Completed</button>
+                  <button id="btn-four" class="btn btn-primary">
+                    Completed
+                  </button>
                 </div>
               </div>
               <!-- Card 5 -->
-              <div class="bg-slate-100 p-4 rounded-lg shadow-md">
+              <div class="bg-slate-100 p-4 rounded-lg shadow-md card">
                 <span class="text-sm bg-white">Google LLC</span>
-                <h3 class="text-lg font-semibold mt-2">Integrate OpenAI API</h3>
+                <h3 id="cardTitleFive" class="text-lg font-semibold mt-2">
+                  Integrate OpenAI API
+                </h3>
                 <div class="mt-2 p-2 bg-white rounded">
                   <p>Debug using Chrome DevTools, check for overlapp।</p>
                 </div>
@@ -173,13 +190,15 @@
                     <span class="text-sm text-gray-500">21 March 2025</span>
                   </div>
 
-                  <button class="btn btn-primary">Completed</button>
+                  <button id="btn-five" class="btn btn-primary">
+                    Completed
+                  </button>
                 </div>
               </div>
               <!-- Card 6 -->
-              <div class="bg-slate-100 p-4 rounded-lg shadow-md">
+              <div class="bg-slate-100 p-4 rounded-lg shadow-md card">
                 <span class="text-sm bg-white">Glassdor</span>
-                <h3 class="text-lg font-semibold mt-2">
+                <h3 id="cardTitleSix" class="text-lg font-semibold mt-2">
                   Improve Job searching
                 </h3>
                 <div class="mt-2 p-2 bg-white rounded">
@@ -191,7 +210,9 @@
                     <span class="text-sm text-gray-500">21 March 2025</span>
                   </div>
 
-                  <button class="btn btn-primary">Completed</button>
+                  <button id="btn-six" class="btn btn-primary">
+                    Completed
+                  </button>
                 </div>
               </div>
             </div>
@@ -203,8 +224,10 @@
               <i class="fa-solid fa-clock-rotate-left"></i>
               <p>Activity log</p>
             </div>
-            <div>
-              <button class="btn btn-primary">Clear History</button>
+            <div id="addParagraph" class="">
+              <button id="btn-seven" class="btn btn-primary">
+                Clear History
+              </button>
             </div>
           </div>
         </div>
