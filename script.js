@@ -26,6 +26,7 @@ const buttonFour = document.getElementById("btn-four");
 const buttonFive = document.getElementById("btn-five");
 const buttonSix = document.getElementById("btn-six");
 const btnClearHistory = document.getElementById("btn-clear");
+const colorBtn = document.getElementById("colorButton");
 
 const date = document.getElementById("date");
 const week = document.getElementById("week");
@@ -216,4 +217,9 @@ btnClearHistory.addEventListener("click", function (e) {
   elements.forEach(function (element) {
     element.remove();
   });
+});
+
+colorBtn.addEventListener("click", function (e) {
+  var randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+  document.body.style.backgroundColor = randomColor;
 });
